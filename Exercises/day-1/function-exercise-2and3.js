@@ -158,6 +158,8 @@ const generateColors = (type, count) => {
   for (let i = 0; i < count; i++) {
     if (type === 'hexa') {
       colors.push('#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0'));
+      //or 
+      // colors.push('#' + Math.floor(Math.random()*0xFFFFFF).toString(16).padStart(6, '0'));
     } else if (type === 'rgb') {
       colors.push(`rgb(${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)}, ${Math.floor(Math.random()*256)})`);
     }
