@@ -169,15 +169,15 @@ const generateColors = (type, count) => {
 
 
 // Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
-const shuffleArray = (arr) =>{
-  let shuffeled = []
-  arr.forEach((item) => {
-    let randomindex = Math.floor(Math.random()*arr.length)
-    shuffeled.push(arr[randomindex])
-
-  });
-  return shuffeled
-}
+const shuffleArray = (arr) => {
+  let shuffled = [];
+  while (arr.length > 0) {
+    let randomIndex = Math.floor(Math.random() * arr.length);
+    shuffled.push(arr[randomIndex]);
+    arr.splice(randomIndex, 1);
+  }
+  return shuffled;
+};
 
 // Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
 const factorial = (num) => {
