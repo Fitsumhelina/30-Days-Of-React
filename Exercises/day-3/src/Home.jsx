@@ -1,3 +1,4 @@
+
 function Home() {
     const techs = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js']
    
@@ -14,6 +15,8 @@ function Home() {
                 )
             })}
         </ul>
+
+        
     </div>
   )
 }
