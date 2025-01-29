@@ -15,7 +15,7 @@ function Logout () {
 function App () {
 
    const  status ={
-        isLoggedIn: false,
+        isLoggedIn: true,
     }
 
     return (
